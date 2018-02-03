@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.BorderPane?>
+
+<SplitPane dividerPositions="0.4" prefHeight="500.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml" fx:controller="pl.wat.wcy.prz.i5b4s1.controllers.LabOperation">
+        <GridPane alignment="center" hgap="5" vgap="10" >
+            <Label prefWidth="120" text="%list.laboratory" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="0"> <font><Font size="14.0" /></font></Label>
+            <ChoiceBox fx:id="list" prefWidth="120" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+            <Button onAction="#refresh" prefWidth="120" text="%button.refresh" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+            <Button onAction="#addLab" prefWidth="120" text="%button.add.lab" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+            <Button onAction="#removeLab" fx:id="buttonRemoveLab" prefWidth="120.0" text="%button.remove.lab" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+            <Button onAction="#viewAllEquipment" fx:id="buttonViewEquipment" prefWidth="120" text="%button.view.all" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="11" />
+            <Button onAction="#removeEquipment" fx:id="buttonRemoveEquipment" prefWidth="120" text="%button.remove.equipment" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="11" />
+        </GridPane>
+        <BorderPane>
+            <center>
+                <TableView fx:id="tableViewEquipment">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="50" text="%id" />
+                        <TableColumn fx:id="name" prefWidth="180" text="%name" />
+                        <TableColumn fx:id="serialNumber" prefWidth="185" text="%serial.number" />
+                    </columns>
+                </TableView>
+            </center>
+            <bottom>
+                <GridPane prefHeight="50" alignment="center" hgap="8" vgap="10">
+                    <Label prefWidth="40" text="%name" GridPane.columnIndex="0"  GridPane.rowIndex="0" />
+                    <TextField fx:id="nameEquipment" prefWidth="80" GridPane.columnIndex="1"  GridPane.rowIndex="0" />
+                    <Label prefWidth="80" text="%serial.number" GridPane.columnIndex="2"  GridPane.rowIndex="0" />
+                    <TextField fx:id="serialNumberEquipment" prefWidth="80" GridPane.columnIndex="3"  GridPane.rowIndex="0"/>
+                    <Button prefWidth="80" onAction="#addEquipment" fx:id="buttonAddEquipment" text="%button.add.equipment"  GridPane.columnIndex="4"  GridPane.rowIndex="0"/>
+                </GridPane>
+            </bottom>
+        </BorderPane>
+</SplitPane>

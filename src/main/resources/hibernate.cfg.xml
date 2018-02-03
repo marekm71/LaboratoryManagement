@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url"> jdbc:mysql://sql.marekm71.nazwa.pl:3306/marekm71 </property>
+        <property name="hibernate.connection.username">marekm71</property>
+        <property name="hibernate.connection.password">Prezes71</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class ="pl.wat.wcy.prz.i5b4s1.database.model.User" />
+        <mapping class ="pl.wat.wcy.prz.i5b4s1.database.model.Lab" />
+        <mapping class ="pl.wat.wcy.prz.i5b4s1.database.model.Equipment" />
+    </session-factory>
+</hibernate-configuration>

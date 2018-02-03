@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:id="gridPane" alignment="center" hgap="30" prefHeight="80" prefWidth="200" xmlns:fx="http://javafx.com/fxml"  >
+   <Label text="%please.wait" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+   <ProgressIndicator GridPane.columnIndex="1" GridPane.rowIndex="0" />
+</GridPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" prefHeight="515.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml" fx:controller="pl.wat.wcy.prz.i5b4s1.controllers.Application">
+   <top>
+      <MenuBar>
+          <Menu text="%laboratory">
+              <MenuItem fx:id="edit" text="%edit" />
+          </Menu>
+          <Menu text="%skin">
+              <MenuItem fx:id="skin1" text="%skin1" />
+              <MenuItem fx:id="skin2" text="%skin2" />
+              <MenuItem fx:id="skin3" text="%skin3" />
+          </Menu>
+          <Menu text="%time">
+              <MenuItem fx:id="time" text="%actually.time" />
+          </Menu>
+          <Menu text="%other">
+              <MenuItem fx:id="information" text="%information.user" />
+              <MenuItem fx:id="changePassword" text="%password.change" />
+              <MenuItem fx:id="logout" text="%logout" />
+         </Menu>
+      </MenuBar>
+   </top>
+</BorderPane>
